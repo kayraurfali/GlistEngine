@@ -149,6 +149,18 @@ Public Types</h2></td></tr>
 , <b>FUNCTION_FIRSTINDEX</b>
  }</td></tr>
 <tr class="separator:aea3e861ff3daf2cd6a254e6190ee65b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649fe0c42aa53f835ebedebd472d21d1"><td class="memItemLeft" align="right" valign="top"><a id="a649fe0c42aa53f835ebedebd472d21d1"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>PROCESS_TEXT</b>
+, <b>PROCESS_FONT</b>
+, <b>PROCESS_FONTSTATE</b>
+, <b>PROCESS_ALIGNMENT</b>
+, <br />
+&#160;&#160;<b>PROCESS_COLOR</b>
+, <b>PROCESS_LINE</b>
+, <b>PROCESS_ALL</b>
+<br />
+ }</td></tr>
+<tr class="separator:a649fe0c42aa53f835ebedebd472d21d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classgBaseGUIObject"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classgBaseGUIObject')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classgBaseGUIObject.html">gBaseGUIObject</a></td></tr>
 <tr class="memitem:a481c27c2e5386988f2c965b9ff4761c0 inherit pub_types_classgBaseGUIObject"><td class="memItemLeft" align="right" valign="top"><a id="a481c27c2e5386988f2c965b9ff4761c0"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>TEXTALIGNMENT_LEFT</b>
 , <b>TEXTALIGNMENT_MIDDLE</b>
@@ -188,27 +200,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCellFontColor</b> 
 <tr class="memitem:a3dbf4a2375d918464127ee16ebf25e4c"><td class="memItemLeft" align="right" valign="top"><a id="a3dbf4a2375d918464127ee16ebf25e4c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCellLine</b> (int lineNo, bool clicked)</td></tr>
 <tr class="separator:a3dbf4a2375d918464127ee16ebf25e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e5fd8e029d236f7ba98308efe3e5386"><td class="memItemLeft" align="right" valign="top"><a id="a0e5fd8e029d236f7ba98308efe3e5386"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCopiedCell</b> (<a class="el" href="structgGUIGrid_1_1Cell.html">Cell</a> *cell)</td></tr>
-<tr class="separator:a0e5fd8e029d236f7ba98308efe3e5386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab37f1268ae54e2173fe6c9c20a272fed"><td class="memItemLeft" align="right" valign="top"><a id="ab37f1268ae54e2173fe6c9c20a272fed"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getCell</b> (int rowNo, int columnNo)</td></tr>
-<tr class="separator:ab37f1268ae54e2173fe6c9c20a272fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c15a1d672ad34543021478865e493a"><td class="memItemLeft" align="right" valign="top"><a id="a11c15a1d672ad34543021478865e493a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelectedFrameColor</b> (<a class="el" href="classgColor.html">gColor</a> *selectedFrameColor)</td></tr>
+<tr class="separator:a11c15a1d672ad34543021478865e493a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4974f7c7d37dab80a6d9ae36811b4d9"><td class="memItemLeft" align="right" valign="top"><a id="aa4974f7c7d37dab80a6d9ae36811b4d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelectedAreaColor</b> (<a class="el" href="classgColor.html">gColor</a> *selectedAreaColor)</td></tr>
+<tr class="separator:aa4974f7c7d37dab80a6d9ae36811b4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa25387318432352e6a2c364d2e31ba"><td class="memItemLeft" align="right" valign="top"><a id="a5aa25387318432352e6a2c364d2e31ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCellContent</b> (<a class="el" href="structgGUIGrid_1_1Cell.html">Cell</a> *cell, std::string cellContent)</td></tr>
+<tr class="separator:a5aa25387318432352e6a2c364d2e31ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48dcff884a265e82bee6b1f021c197f8"><td class="memItemLeft" align="right" valign="top"><a id="a48dcff884a265e82bee6b1f021c197f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCellContent</b> (std::string cell, std::string cellContent)</td></tr>
+<tr class="separator:a48dcff884a265e82bee6b1f021c197f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44de9cdcf9a373f5a3d7543832df4531"><td class="memItemLeft" align="right" valign="top"><a id="a44de9cdcf9a373f5a3d7543832df4531"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCellAlignment</b> (<a class="el" href="structgGUIGrid_1_1Cell.html">Cell</a> *cell, int cellAlignment)</td></tr>
+<tr class="separator:a44de9cdcf9a373f5a3d7543832df4531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555d9ccc50e861a88a3be6893e7e9b70"><td class="memItemLeft" align="right" valign="top"><a id="a555d9ccc50e861a88a3be6893e7e9b70"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCellAlignment</b> (std::string cell, int cellAlignment)</td></tr>
+<tr class="separator:a555d9ccc50e861a88a3be6893e7e9b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4d04bfd2da4d1c38201529866ff307"><td class="memItemLeft" align="right" valign="top"><a id="aff4d04bfd2da4d1c38201529866ff307"></a>
+<a class="el" href="structgGUIGrid_1_1Cell.html">Cell</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCell</b> (std::string cellID)</td></tr>
+<tr class="separator:aff4d04bfd2da4d1c38201529866ff307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f8959d0e3f0f67944e526c35d7eee6"><td class="memItemLeft" align="right" valign="top"><a id="a72f8959d0e3f0f67944e526c35d7eee6"></a>
+<a class="el" href="classgColor.html">gColor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSelectedFrameColor</b> ()</td></tr>
+<tr class="separator:a72f8959d0e3f0f67944e526c35d7eee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07076514d9dd5a20e3f7ace0767e372"><td class="memItemLeft" align="right" valign="top"><a id="ab07076514d9dd5a20e3f7ace0767e372"></a>
+<a class="el" href="classgColor.html">gColor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSelectedAreaColor</b> ()</td></tr>
+<tr class="separator:ab07076514d9dd5a20e3f7ace0767e372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac85a49806fc22aa499c2febfb84dd903"><td class="memItemLeft" align="right" valign="top"><a id="ac85a49806fc22aa499c2febfb84dd903"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawContent</b> ()</td></tr>
 <tr class="separator:ac85a49806fc22aa499c2febfb84dd903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54119bad48cb5701cc161fd00fbea965"><td class="memItemLeft" align="right" valign="top"><a id="a54119bad48cb5701cc161fd00fbea965"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawCellBackground</b> ()</td></tr>
 <tr class="separator:a54119bad48cb5701cc161fd00fbea965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a729bf425eb784e3706b813ef7a14035f"><td class="memItemLeft" align="right" valign="top"><a id="a729bf425eb784e3706b813ef7a14035f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawSelectedBox</b> ()</td></tr>
-<tr class="separator:a729bf425eb784e3706b813ef7a14035f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace3a5fa34928c8f4bf21a1924fb3eb02"><td class="memItemLeft" align="right" valign="top"><a id="ace3a5fa34928c8f4bf21a1924fb3eb02"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawSelectedRow</b> ()</td></tr>
-<tr class="separator:ace3a5fa34928c8f4bf21a1924fb3eb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9bd16e2d0901b13883117fe18efa459"><td class="memItemLeft" align="right" valign="top"><a id="ab9bd16e2d0901b13883117fe18efa459"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawSelectedColumn</b> ()</td></tr>
-<tr class="separator:ab9bd16e2d0901b13883117fe18efa459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ca8251f16c199f7b920af4f0a37fe6e"><td class="memItemLeft" align="right" valign="top"><a id="a0ca8251f16c199f7b920af4f0a37fe6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawTitleRowBackground</b> ()</td></tr>
 <tr class="separator:a0ca8251f16c199f7b920af4f0a37fe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,27 +251,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawTitleLines</b> ()
 <tr class="memitem:a230d4c8b994f33f7db6be0360467dd62"><td class="memItemLeft" align="right" valign="top"><a id="a230d4c8b994f33f7db6be0360467dd62"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawCellContents</b> ()</td></tr>
 <tr class="separator:a230d4c8b994f33f7db6be0360467dd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e550a25875f9626f86444319ad386ed"><td class="memItemLeft" align="right" valign="top"><a id="a8e550a25875f9626f86444319ad386ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fillCell</b> (int cellNo, std::string tempstr)</td></tr>
-<tr class="separator:a8e550a25875f9626f86444319ad386ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c56ca59e50da0681f6061ee18153e1"><td class="memItemLeft" align="right" valign="top"><a id="a26c56ca59e50da0681f6061ee18153e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createCell</b> (int rowNo, int columnNo)</td></tr>
-<tr class="separator:a26c56ca59e50da0681f6061ee18153e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad822d04d5593ed390bcdd382fd689bde"><td class="memItemLeft" align="right" valign="top"><a id="ad822d04d5593ed390bcdd382fd689bde"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showCells</b> ()</td></tr>
-<tr class="separator:ad822d04d5593ed390bcdd382fd689bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e6cef9d29dfedb79025a933be6b49b"><td class="memItemLeft" align="right" valign="top"><a id="a86e6cef9d29dfedb79025a933be6b49b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showCell</b> (int rowNo, int columnNo)</td></tr>
-<tr class="separator:a86e6cef9d29dfedb79025a933be6b49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f981ba58c53c59981f725fadb2fdcf"><td class="memItemLeft" align="right" valign="top"><a id="a96f981ba58c53c59981f725fadb2fdcf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createTextBox</b> ()</td></tr>
-<tr class="separator:a96f981ba58c53c59981f725fadb2fdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a546c823b09e4088b8c9c3a3d04f4fa14"><td class="memItemLeft" align="right" valign="top"><a id="a546c823b09e4088b8c9c3a3d04f4fa14"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>changeCell</b> ()</td></tr>
-<tr class="separator:a546c823b09e4088b8c9c3a3d04f4fa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56f976d2a6a671b10405256ec84a11ee"><td class="memItemLeft" align="right" valign="top"><a id="a56f976d2a6a671b10405256ec84a11ee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>checkCellType</b> (int cellIndex)</td></tr>
-<tr class="separator:a56f976d2a6a671b10405256ec84a11ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb836e7cd78b9d80908f502fa8cb6cd3"><td class="memItemLeft" align="right" valign="top"><a id="afb836e7cd78b9d80908f502fa8cb6cd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawSelectedArea</b> ()</td></tr>
+<tr class="separator:afb836e7cd78b9d80908f502fa8cb6cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9680a5de13c3ae9e70b01354f5d9e241"><td class="memItemLeft" align="right" valign="top"><a id="a9680a5de13c3ae9e70b01354f5d9e241"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
 <tr class="separator:a9680a5de13c3ae9e70b01354f5d9e241"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,7 +401,7 @@ Static Public Attributes</h2></td></tr>
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>maxcolumnnum</b> = 16384</td></tr>
 <tr class="separator:ac585fea11c01b8325e38167e47d8d345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeea03f884bf1a6736cdb9f2d29353ad"><td class="memItemLeft" align="right" valign="top"><a id="abeea03f884bf1a6736cdb9f2d29353ad"></a>
-static const int&#160;</td><td class="memItemRight" valign="bottom"><b>maxrownum</b> = 1048576</td></tr>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>maxrownum</b> = 131071</td></tr>
 <tr class="separator:abeea03f884bf1a6736cdb9f2d29353ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classgBaseGUIObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classgBaseGUIObject')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classgBaseGUIObject.html">gBaseGUIObject</a></td></tr>
 <tr class="memitem:a5d956da60aa20c5e3fec367a270e4b94 inherit pub_static_attribs_classgBaseGUIObject"><td class="memItemLeft" align="right" valign="top"><a id="a5d956da60aa20c5e3fec367a270e4b94"></a>
