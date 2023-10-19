@@ -4,6 +4,7 @@ var classgGUIDropdownList =
     [ "~gGUIDropdownList", "classgGUIDropdownList.html#add0715129ffde082292b73aee9d06282", null ],
     [ "addElement", "classgGUIDropdownList.html#aa474389deeb0013fa8574b4a51db9800", null ],
     [ "addElement", "classgGUIDropdownList.html#ac984e25a1447de2f00f1efb8642365c5", null ],
+    [ "clearTitle", "classgGUIDropdownList.html#a078b2f34726fbe05f5fcc9aed7bf768c", null ],
     [ "draw", "classgGUIDropdownList.html#a7c7e528400bff71e5a0b3ef65dd23334", null ],
     [ "getSelectedTitle", "classgGUIDropdownList.html#a3aeae82a4eb1f00a26c684e1b45a43c2", null ],
     [ "mousePressed", "classgGUIDropdownList.html#ab747a9e9c19c2d6e06df6770f9daa8be", null ],
@@ -14,5 +15,6 @@ var classgGUIDropdownList =
     [ "setfirstTitle", "classgGUIDropdownList.html#ac99c861078bc3fd811def9ae8bbb21d8", null ],
     [ "setParentFrame", "classgGUIDropdownList.html#a444ed909fca3c9682f3a35daea17f967", null ],
     [ "setSelectedTitle", "classgGUIDropdownList.html#a0a4783c021be342cf10efdcccb8ca21a", null ],
+    [ "gGUIToolbar", "classgGUIDropdownList.html#abca0955883a4320f4ed9965d71443713", null ],
     [ "list", "classgGUIDropdownList.html#ad41e0576f310119078c1b1769d7546da", null ]
 ];
