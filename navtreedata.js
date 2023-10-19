@@ -45,16 +45,16 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classgBaseParticles.html#a1f39ac3ce36a9bcd22ea3ba3b5c9049f",
-"classgColorChannelMixer.html#acecda00f5758e18c7fb1997e0b8e88ca",
-"classgGUICandleStickChart.html#a3de061418c3e9f787b9e55ef46f24cf5",
-"classgGUIGraph.html#a01ce10c83b5faaa2bf88ffb250701f66",
-"classgGUINavigation.html#a07bb7f409fba7706a64cedb2842f2d51",
-"classgGUISlider.html#a360fc0cfb6acda91d77575d8a42dd463",
-"classgJoystickConnectEvent.html#af4e7100feffdd911e59c15259b09a00f",
-"classgModel.html#a80189770da5bfe07724807cebb7e5693",
-"classgRenderer.html#a30790ba729909b3fabeea48e40f04ec2",
-"classgTexture.html#a1f566477436a8f84cd16a2acb080cff5",
-"gGUIColumnChart_8h_source.html"
+"classgColorChannelMixer.html#a76d48697a410879d5c3a3c2e6cafc3dd",
+"classgGUICandleStickChart.html#a2b279f13aab91dea10f70e16b76b9fb4",
+"classgGUIFrame.html#ab6e1c7302ff2f32bad4a31dd28e09aee",
+"classgGUIMenubar.html#a9bf9f134bbf68989ed274fc6f33618e7",
+"classgGUISlider.html#a2e1a7a7bb249fa8f91b0ac560918c494",
+"classgJoystickConnectEvent.html",
+"classgModel.html#a79c8bd1166ad5429e6dea6a87c05ad9b",
+"classgRenderer.html#a2da869537dd715fe0eeeb9e2039f5c5e",
+"classgTexture.html#a1ba5eb1eacf813c037930dec5c46516b",
+"gGUIColorPicker_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
