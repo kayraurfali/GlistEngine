@@ -37,6 +37,7 @@ var hierarchy =
     ] ],
     [ "gMatrix4", "classgMatrix4.html", null ],
     [ "gObject", "classgObject.html", [
+      [ "gUbo< gSceneLights >", "classgUbo.html", null ],
       [ "gAES", "classgAES.html", null ],
       [ "gAppManager", "classgAppManager.html", null ],
       [ "gAppObject", "classgAppObject.html", [
@@ -107,7 +108,8 @@ var hierarchy =
             [ "gGUISlider", "classgGUISlider.html", null ],
             [ "gGUISwitchButton", "classgGUISwitchButton.html", null ],
             [ "gGUIText", "classgGUIText.html", null ],
-            [ "gGUITextbox", "classgGUITextbox.html", null ]
+            [ "gGUITextbox", "classgGUITextbox.html", null ],
+            [ "gGUITooltipText", "classgGUITooltipText.html", null ]
           ] ],
           [ "gGUIForm", "classgGUIForm.html", [
             [ "gGUIDialogue", "classgGUIDialogue.html", null ],
@@ -185,7 +187,9 @@ var hierarchy =
       [ "gSpriteAnimator", "classgSpriteAnimator.html", null ],
       [ "gThread", "classgThread.html", [
         [ "gAssetLoader", "classgAssetLoader.html", null ]
-      ] ]
+      ] ],
+      [ "gUbo< T >", "classgUbo.html", null ],
+      [ "gWindows", "classgWindows.html", null ]
     ] ],
     [ "gRect", "classgRect.html", null ],
     [ "gUTF8Iterator", "classgUTF8Iterator.html", null ],

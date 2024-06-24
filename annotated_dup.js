@@ -94,6 +94,7 @@ var annotated_dup =
     [ "gGUITimebox", "classgGUITimebox.html", "classgGUITimebox" ],
     [ "gGUIToolbar", "classgGUIToolbar.html", "classgGUIToolbar" ],
     [ "gGUIToolbarButton", "classgGUIToolbarButton.html", "classgGUIToolbarButton" ],
+    [ "gGUITooltipText", "classgGUITooltipText.html", "classgGUITooltipText" ],
     [ "gGUITreelist", "classgGUITreelist.html", "classgGUITreelist" ],
     [ "gHighContrast", "classgHighContrast.html", "classgHighContrast" ],
     [ "gHttpFile", "classgHttpFile.html", "classgHttpFile" ],
@@ -151,6 +152,7 @@ var annotated_dup =
     [ "gTiltShift", "classgTiltShift.html", "classgTiltShift" ],
     [ "gTriangle", "classgTriangle.html", "classgTriangle" ],
     [ "gTube", "classgTube.html", "classgTube" ],
+    [ "gUbo", "classgUbo.html", "classgUbo" ],
     [ "gUTF8Iterator", "classgUTF8Iterator.html", "classgUTF8Iterator" ],
     [ "gUtils", "classgUtils.html", "classgUtils" ],
     [ "gVbo", "classgVbo.html", "classgVbo" ],
@@ -161,5 +163,6 @@ var annotated_dup =
     [ "gWindowLoseFocusEvent", "classgWindowLoseFocusEvent.html", "classgWindowLoseFocusEvent" ],
     [ "gWindowMouseEnterEvent", "classgWindowMouseEnterEvent.html", "classgWindowMouseEnterEvent" ],
     [ "gWindowMouseExitEvent", "classgWindowMouseExitEvent.html", "classgWindowMouseExitEvent" ],
-    [ "gWindowResizeEvent", "classgWindowResizeEvent.html", "classgWindowResizeEvent" ]
+    [ "gWindowResizeEvent", "classgWindowResizeEvent.html", "classgWindowResizeEvent" ],
+    [ "gWindows", "classgWindows.html", "classgWindows" ]
 ];

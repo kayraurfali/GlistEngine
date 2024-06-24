@@ -22,7 +22,7 @@ var classgNode =
     [ "pan", "classgNode.html#aaa50b0228f1afa2fb06b1aeac5959699", null ],
     [ "panDeg", "classgNode.html#ae28250b69ddd6462d84cbb2c4300a7d3", null ],
     [ "popMatrix", "classgNode.html#a41a65cf61c60c82b19ce140364f98a26", null ],
-    [ "processTransformationMatrix", "classgNode.html#a17bda4bce2883efc9b305665ef408f59", null ],
+    [ "processTransformationMatrix", "classgNode.html#a3059566fe5fb524cb5c25d9c6065f48c", null ],
     [ "pushMatrix", "classgNode.html#aa3a5c83ced88cd5ed716849c690c9283", null ],
     [ "removeParent", "classgNode.html#a47b3c02a129b0fcbdd488583f97a1033", null ],
     [ "roll", "classgNode.html#ad87e369cc84a3bedf212b1096fba9024", null ],
@@ -52,5 +52,8 @@ var classgNode =
     [ "orientation", "classgNode.html#a0d3a820f6eab89ba1533c6085e178681", null ],
     [ "parent", "classgNode.html#a1b05034284ccbf2446c1dd82dfaef004", null ],
     [ "position", "classgNode.html#ac667146bf0d8c83ea4be5dad35a0a490", null ],
+    [ "prevorientation", "classgNode.html#a59e5322d62b36071004fc30f95c64d26", null ],
+    [ "prevposition", "classgNode.html#ae84e1d6726fd6561e73f05f7201c25ff", null ],
+    [ "prevscalevec", "classgNode.html#a83b9727a9ec13a3615bba4156ff19092", null ],
     [ "scalevec", "classgNode.html#a56adfd3650a4955e33e0a2ee7d94766f", null ]
 ];

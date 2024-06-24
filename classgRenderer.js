@@ -27,6 +27,7 @@ var classgRenderer =
     [ "enableLighting", "classgRenderer.html#a39a5d794dbe17e40a2a132db5b2ad9ed", null ],
     [ "enableSSAO", "classgRenderer.html#aa2d8a8b220a98985be1457b08ba1293f", null ],
     [ "getBrdfShader", "classgRenderer.html#ab9f5ffa5c70d16b485b3fe771637ef38", null ],
+    [ "getCamera", "classgRenderer.html#a686b0669309a08676092adf0e3af8154", null ],
     [ "getCameraPosition", "classgRenderer.html#abaa4112d68a495392307b871046126cf", null ],
     [ "getColor", "classgRenderer.html#a717c416a501c98527a9d386cc77903d6", null ],
     [ "getColorShader", "classgRenderer.html#a5230aa8967d59d2740c9070ae2f81c2d", null ],
@@ -80,6 +81,7 @@ var classgRenderer =
     [ "removeAllSceneLights", "classgRenderer.html#abcce0b37dc08774eb073ebc6bc4fa10c", null ],
     [ "removeSceneLight", "classgRenderer.html#a85ea5e805da1e3463ea4f4b26ade5987", null ],
     [ "restoreMatrices", "classgRenderer.html#a07afe7d0163e605821b066fa75903304", null ],
+    [ "setCamera", "classgRenderer.html#ac909a5f733a0750e1c6d813af9346e1c", null ],
     [ "setCameraPosition", "classgRenderer.html#a41a33283293a47890c006bac8e5b5368", null ],
     [ "setColor", "classgRenderer.html#afea5a6a497b21fd7a483523a9d931af0", null ],
     [ "setColor", "classgRenderer.html#ace9d224185df61cdf2ee58925626babd", null ],
@@ -121,5 +123,8 @@ var classgRenderer =
     [ "setProjectionMatrix2d", "classgRenderer.html#addf7108c9745cdb092bf888b99418d1f", null ],
     [ "setSSAOBias", "classgRenderer.html#a14f49dde3312311288f0ca34c847efc4", null ],
     [ "setViewMatrix", "classgRenderer.html#add20288b75535a460ccaf6615b2dcbd9", null ],
-    [ "takeScreenshot", "classgRenderer.html#a08f1eb36d7d25fad01f56695a10889ee", null ]
+    [ "takeScreenshot", "classgRenderer.html#a08f1eb36d7d25fad01f56695a10889ee", null ],
+    [ "takeScreenshot", "classgRenderer.html#ab715d08fef850135dc2e48568c3f057a", null ],
+    [ "updateLights", "classgRenderer.html#af52cd93978e1bbe6f89f1d3a6d74f3c6", null ],
+    [ "gRenderObject", "classgRenderer.html#a9acbb4fb4810b70c2b1467d45a86215e", null ]
 ];

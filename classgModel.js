@@ -12,7 +12,7 @@ var classgModel =
     [ "getAnimationFramerate", "classgModel.html#a7a636e92ccd27653690fe04acc81e1e5", null ],
     [ "getAnimationNum", "classgModel.html#a3424d800b0a40000df44b8a486a45f82", null ],
     [ "getAnimationPosition", "classgModel.html#a15ff790bdd4294c4367369dc96c43a60", null ],
-    [ "getBoundingBox", "classgModel.html#aee3bcdb8c8559f2391edad899a109392", null ],
+    [ "getBoundingBox", "classgModel.html#aa5017d1dcf4884d8793afb0a8f28b677", null ],
     [ "getFilename", "classgModel.html#abb492dfc4516c95822ab56ddeb235de7", null ],
     [ "getFullpath", "classgModel.html#aca7ad27e75e272d6e5653b749b01901e", null ],
     [ "getInitialBoundingBox", "classgModel.html#abdb6cad33be7d2de7ae00a526fe7a8a4", null ],
@@ -39,6 +39,8 @@ var classgModel =
     [ "nextMorphingFrame", "classgModel.html#a605fa9f6e607277e5ddf91877e90de3f", null ],
     [ "pan", "classgModel.html#a1c9a9d59bed8b954e7c81db65f939028", null ],
     [ "panDeg", "classgModel.html#aaae6d81e40b49a79743d9b5e96fd9992", null ],
+    [ "processTransformationMatrix", "classgModel.html#a0d7e04e32a21f6272ea2a3fe8d8f3563", null ],
+    [ "recalculateBoundingBox", "classgModel.html#a83d666daa1c17fab4d43b4cfc7e998e0", null ],
     [ "roll", "classgModel.html#a9713e3b50959404f9d9cb29d6524bd87", null ],
     [ "rollDeg", "classgModel.html#a9d2c911be66baa27a196fe0c128695e4", null ],
     [ "rotate", "classgModel.html#a554b98f02c61949dc0cfa11bddff4ac4", null ],
@@ -51,6 +53,7 @@ var classgModel =
     [ "setAnimationFrameNo", "classgModel.html#a7068099a36182446d76bf65cf7f0c73d", null ],
     [ "setAnimationFrameNum", "classgModel.html#adffdfd95a243a6681998e47264853ea6", null ],
     [ "setAnimationFramerate", "classgModel.html#a735eca76a2f49b924845843e172a89ca", null ],
+    [ "setEnableFrustumCulling", "classgModel.html#ae21f13df1e76736cc6a31529cdaca3d6", null ],
     [ "setMorphingFrameNo", "classgModel.html#a82abf38c7cfb26b51a09fdae425fb048", null ],
     [ "setMorphingFrameNum", "classgModel.html#aed790cb190cc47e35421754564195dad", null ],
     [ "setMorphingSpeed", "classgModel.html#ab9aac3bd4d83708a8d52344ad6f3d7a1", null ],
@@ -67,6 +70,6 @@ var classgModel =
     [ "tiltDeg", "classgModel.html#ab580e6aa64b9d448d20d04f139fcd9f0", null ],
     [ "truck", "classgModel.html#a47b8a9ab9025c504729339ce5f5f2e45", null ],
     [ "directory", "classgModel.html#a132fda4d09c27d33002f710a277e03dc", null ],
-    [ "meshes", "classgModel.html#af42cbd53f51a091594e5900a9a147bf7", null ],
+    [ "meshes", "classgModel.html#ac86fbf79931314dbe9e4022bb4581ebc", null ],
     [ "textures_loaded", "classgModel.html#a474d45544560276725a46b446b693e2c", null ]
 ];
