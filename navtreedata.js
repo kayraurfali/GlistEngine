@@ -45,17 +45,17 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classgBaseParticles.html#a032ca3f4e351e20ffb363d7020584014",
-"classgColorAdjustments.html#a7058f701a06a2ae69b12dafe73d6cd96",
-"classgGUIButton.html#a87704dd76c8c98c5e5d2e040b563e957",
-"classgGUIForm.html#a7766ed10d8e46e7a0543f60f7e23a8f6",
-"classgGUIListbox.html#a6cbb7f4e8504bdcf72510dfb67dc6bf2",
-"classgGUIRadioButton.html#abd0061858c3f6cebd58f4858dcf69f64",
-"classgGUITimebox.html#abac06665cf37bb659a3bb61016f23e9c",
-"classgMaterial.html#a0829570c46f47b1515171c9c7f23e9df",
-"classgNode.html#a41a65cf61c60c82b19ce140364f98a26",
-"classgRenderer.html#ae0fa143cfdfe2582d2be4a5d3c062a16",
-"classgThread.html#ac956060e5aec43518e48ba52dc182ae3",
-"gShadowsMidtonesHighlights_8h_source.html"
+"classgDatabase.html#a13c3213a26d55ee9fd8047c45a49ac4c",
+"classgGUICandleStickChart.html#a2b279f13aab91dea10f70e16b76b9fb4",
+"classgGUIForm.html#ad7de79f1f95b36356d2e6cd7ad692d5b",
+"classgGUIManager.html#a8a20fb1a7b6ca25363384e5abca48351",
+"classgGUIScrollable.html#a1871b76ea2ca231f53aac2074d45dab2",
+"classgGUIToolbarButton.html#a68f0ae8e92099be256249676d792a0ef",
+"classgMaterial.html#a489ee74c4ce5d561171e2002ae47bd03",
+"classgMouseButtonEvent.html#ae0118f12de81fa4f96ffe026aaccb25c",
+"classgRenderer.html#ab2efab9124d8796f6792e2e3349df29f",
+"classgTexture.html#aa2ef6754f98401c35bcb432ff10f7983",
+"gGUIPieGraph_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

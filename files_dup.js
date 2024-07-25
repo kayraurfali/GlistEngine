@@ -12,7 +12,6 @@ var files_dup =
     [ "gBaseParticles.h", "gBaseParticles_8h_source.html", null ],
     [ "gBasePlugin.h", "gBasePlugin_8h_source.html", null ],
     [ "gBasePostProcess.h", "gBasePostProcess_8h_source.html", null ],
-    [ "gBaseSound.h", "gBaseSound_8h_source.html", null ],
     [ "gBaseWindow.h", "gBaseWindow_8h_source.html", null ],
     [ "gBloom.h", "gBloom_8h_source.html", null ],
     [ "gBlur.h", "gBlur_8h_source.html", null ],
@@ -104,6 +103,10 @@ var files_dup =
     [ "gLocalization.h", "gLocalization_8h_source.html", null ],
     [ "gMaterial.h", "gMaterial_8h_source.html", null ],
     [ "gMatrix4.h", "gMatrix4_8h_source.html", null ],
+    [ "gMedia.h", "gMedia_8h.html", "gMedia_8h" ],
+    [ "gMediaUtils.h", "gMediaUtils_8h.html", [
+      [ "gMediaUtils", "classgMediaUtils.html", null ]
+    ] ],
     [ "gMesh.h", "gMesh_8h_source.html", null ],
     [ "gModel.h", "gModel_8h_source.html", null ],
     [ "gMorphingMesh.h", "gMorphingMesh_8h_source.html", null ],
@@ -125,6 +128,9 @@ var files_dup =
     [ "gSkinnedMesh.h", "gSkinnedMesh_8h_source.html", null ],
     [ "gSkybox.h", "gSkybox_8h_source.html", null ],
     [ "gSoftFocus.h", "gSoftFocus_8h_source.html", null ],
+    [ "gSound.h", "gSound_8h.html", [
+      [ "gSound", "classgSound.html", "classgSound" ]
+    ] ],
     [ "gSphere.h", "gSphere_8h_source.html", null ],
     [ "gSpriteAnimation.h", "gSpriteAnimation_8h_source.html", null ],
     [ "gSpriteAnimator.h", "gSpriteAnimator_8h_source.html", null ],
