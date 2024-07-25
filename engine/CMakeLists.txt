@@ -10,7 +10,6 @@ endif()
 # Configure compiler and linker as you need
 set(GLIST_CXX_FLAGS_COMMON
     -stdlib=libc++
-    -d2ReducedOptimizeHugeFunctions
     -Wuninitialized
     -Wmultichar
     -ffunction-sections
@@ -19,11 +18,12 @@ set(GLIST_CXX_FLAGS_COMMON
     -frtti
     -fpermissive
     -fPIC
+	-fcolor-diagnostics
 )
 list(APPEND GLIST_CXX_FLAGS_DEBUG -DDEBUG -O0 -g)
 list(APPEND GLIST_CXX_FLAGS_RELEASE -DEIGEN_NO_CUDA -DNDEBUG -O2)
 if(NOT APPLE)
-	set(GLIST_SHARED_LINKER_FLAGS "-v -pthread -Wl,--gc-sections")
+	set(GLIST_SHARED_LINKER_FLAGS "-v -pthread -Wl,--gc-sections -lc++")
 endif()
 
 ##################################################
@@ -35,7 +35,7 @@ if(UNIX AND NOT APPLE)
 	set(LINUX TRUE)
 	set(SYS_NAME "linux")
 endif()
-    
+
 if(WIN32)
     list(APPEND GLIST_CXX_FLAGS_RELEASE "-march=x86-64")
 	list(APPEND GLIST_CXX_FLAGS_DEBUG "-march=x86-64")
@@ -116,7 +116,7 @@ endforeach()
 ########## CPP SOURCE FILES ##########
 set(SRC_FILES
 	${PLUGIN_SRCS}
-	${ENGINE_DIR}/graphics/particles/gFireworksParticles.cpp	
+	${ENGINE_DIR}/graphics/particles/gFireworksParticles.cpp
 	${ENGINE_DIR}/graphics/particles/gFireParticles.cpp
 	${ENGINE_DIR}/base/gBaseParticles.cpp
 	${ENGINE_DIR}/types/gColor.cpp
@@ -146,6 +146,7 @@ set(SRC_FILES
 	${ENGINE_DIR}/utils/gLocalization.cpp
 	${ENGINE_DIR}/utils/gDatabase.cpp
 	${ENGINE_DIR}/utils/gAssetLoader.cpp
+	${ENGINE_DIR}/utils/gMediaUtils.cpp
 	${ENGINE_DIR}/utils/gAES.cpp
 	${ENGINE_DIR}/graphics/primitives/gCross.cpp
 	${ENGINE_DIR}/graphics/primitives/gArc.cpp
@@ -220,8 +221,8 @@ set(SRC_FILES
 	${ENGINE_DIR}/core/gAppObject.cpp
 	${ENGINE_DIR}/base/gBaseComponent.cpp
 	${ENGINE_DIR}/base/gBasePlugin.cpp
-	${ENGINE_DIR}/media/gBaseSound.cpp
-	${ENGINE_DIR}/media/gFmodSound.cpp
+	${ENGINE_DIR}/media/gSound.cpp
+	${ENGINE_DIR}/media/gMedia.cpp
 	${ENGINE_DIR}/base/gBaseApp.cpp
 	${ENGINE_DIR}/base/gBaseCanvas.cpp
 	${ENGINE_DIR}/core/gBaseWindow.cpp
@@ -341,10 +342,9 @@ elseif(IOS)
 elseif(LINUX)
 	list(APPEND INC_DIRS
 		${MINGW64_DIR}/include
-		${MINGW64_DIR}/include/freetype2
 		${MINGW64_DIR}/include/sqlite
 		# TODO: FFMPEG
-		
+
 		/usr/include/freetype2
 		/usr/include
 		/usr/local/lib
@@ -398,6 +398,38 @@ if(WIN32)
 			${MINGW64_DIR}/lib
 			${PLUGIN_LINKDIRS}
 	)
+
+	add_library(portaudio SHARED IMPORTED GLOBAL)
+	set_target_properties(portaudio PROPERTIES IMPORTED_LOCATION "${MINGW64_DIR}/bin/libportaudio.dll")
+	set_target_properties(portaudio PROPERTIES IMPORTED_IMPLIB "${MINGW64_DIR}/lib/libportaudio.dll.a")
+
+	add_library(avcodec SHARED IMPORTED GLOBAL)
+	set_target_properties(avcodec PROPERTIES IMPORTED_LOCATION "${MINGW64_DIR}/bin/avcodec-60.dll")
+	set_target_properties(avcodec PROPERTIES IMPORTED_IMPLIB "${MINGW64_DIR}/lib/libavcodec.dll.a")
+
+	add_library(avdevice SHARED IMPORTED GLOBAL)
+	set_target_properties(avdevice PROPERTIES IMPORTED_LOCATION "${MINGW64_DIR}/bin/avdevice-60.dll")
+	set_target_properties(avdevice PROPERTIES IMPORTED_IMPLIB "${MINGW64_DIR}/lib/libavdevice.dll.a")
+
+	add_library(avfilter SHARED IMPORTED GLOBAL)
+	set_target_properties(avfilter PROPERTIES IMPORTED_LOCATION "${MINGW64_DIR}/bin/avfilter-9.dll")
+	set_target_properties(avfilter PROPERTIES IMPORTED_IMPLIB "${MINGW64_DIR}/lib/libavfilter.dll.a")
+
+	add_library(avformat SHARED IMPORTED GLOBAL)
+	set_target_properties(avformat PROPERTIES IMPORTED_LOCATION "${MINGW64_DIR}/bin/avformat-60.dll")
+	set_target_properties(avformat PROPERTIES IMPORTED_IMPLIB "${MINGW64_DIR}/lib/libavformat.dll.a")
+
+	add_library(avutil SHARED IMPORTED GLOBAL)
+	set_target_properties(avutil PROPERTIES IMPORTED_LOCATION "${MINGW64_DIR}/bin/avutil-58.dll")
+	set_target_properties(avutil PROPERTIES IMPORTED_IMPLIB "${MINGW64_DIR}/lib/libavutil.dll.a")
+
+	add_library(swresample SHARED IMPORTED GLOBAL)
+	set_target_properties(swresample PROPERTIES IMPORTED_LOCATION "${MINGW64_DIR}/bin/swresample-4.dll")
+	set_target_properties(swresample PROPERTIES IMPORTED_IMPLIB "${MINGW64_DIR}/lib/libswresample.dll.a")
+
+	add_library(swscale SHARED IMPORTED GLOBAL)
+	set_target_properties(swscale PROPERTIES IMPORTED_LOCATION "${MINGW64_DIR}/bin/swscale-7.dll")
+	set_target_properties(swscale PROPERTIES IMPORTED_IMPLIB "${MINGW64_DIR}/lib/libswscale.dll.a")
 elseif(ANDROID)
     # These are added by gipAndroid plugin
     # Do not remove the if, otherwise linux libraries will be linked/included.
@@ -498,15 +530,14 @@ if(WIN32)
 		opengl32
 		glew32
 		dbghelp
-#		msvcr100
-#		psapi
-#		swscale-5
-#		swresample-3
-#		avutil-56
-#		avformat-58
-#		avfilter-7
-#		avdevice-58
-#		avcodec-58
+		portaudio
+		avcodec
+		avdevice
+		avfilter
+		avformat
+		avutil
+		swresample
+		swscale
 	)
 elseif(ANDROID)
     # These are added by gipAndroid plugin
@@ -527,6 +558,7 @@ elseif(LINUX)
 		GL
 		GLEW
 		dl
+		portaudiocpp
 	# TODO: FFMPEG
 	)
 elseif(APPLE)
