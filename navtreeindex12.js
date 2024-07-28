@@ -1,16 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"gGUIPieGraph_8h_source.html":[1,0,73],
-"gGUIProgressBar_8h_source.html":[1,0,74],
-"gGUIRadarChart_8h_source.html":[1,0,75],
-"gGUIRadioButton_8h_source.html":[1,0,76],
-"gGUIResources_8h_source.html":[1,0,77],
-"gGUIScrollable_8h_source.html":[1,0,78],
-"gGUISizer_8h_source.html":[1,0,79],
-"gGUISlider_8h_source.html":[1,0,80],
-"gGUIStatusBar_8h_source.html":[1,0,81],
-"gGUISurface_8h_source.html":[1,0,82],
-"gGUISwitchButton_8h_source.html":[1,0,83],
 "gGUITable_8h_source.html":[1,0,84],
 "gGUIText_8h_source.html":[1,0,85],
 "gGUITextbox_8h_source.html":[1,0,86],
