@@ -30,7 +30,6 @@ var classgMedia =
     [ "currentpacket", "classgMedia.html#a6658afc5e5afd83385b4819d357dc88d", null ],
     [ "currentposition", "classgMedia.html#a69396a42e819a7831aa8054f6c68ca84", null ],
     [ "duration", "classgMedia.html#ae103c6ca15bf7f4c52a883476fa42ef3", null ],
-    [ "duration", "classgMedia.html#a67a33ffa6874c46d03b52e8b6f3a2dd4", null ],
     [ "formatcontext", "classgMedia.html#aa07e0606bdc140a7d9f26e28545c6dd8", null ],
     [ "framecount", "classgMedia.html#a49783f5874d48c7392993e3a37ff85d4", null ],
     [ "framesprocessed", "classgMedia.html#aed8dcbe24cb69627976439eeae556a03", null ],

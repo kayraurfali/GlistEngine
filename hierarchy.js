@@ -4,9 +4,6 @@ var hierarchy =
     [ "gGUIGrid::Cell", "structgGUIGrid_1_1Cell.html", null ],
     [ "gGUITreelist::Element", "structgGUITreelist_1_1Element.html", null ],
     [ "gAnimationTrigger", "classgAnimationTrigger.html", null ],
-    [ "gBaseSound", null, [
-      [ "gFmodSound", "classgFmodSound.html", null ]
-    ] ],
     [ "gColor", "classgColor.html", null ],
     [ "gEvent", "classgEvent.html", [
       [ "gCharTypedEvent", "classgCharTypedEvent.html", null ],

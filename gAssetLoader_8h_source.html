@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('gAssetLoader_8h_source.html',''); init
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;gImage.h&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;gModel.h&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;gFont.h&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;gFmodSound.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gSound_8h.html">gSound.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classgAssetLoader.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgAssetLoader.html">gAssetLoader</a>: <span class="keyword">public</span> <a class="code" href="classgThread.html">gThread</a> {</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('gAssetLoader_8h_source.html',''); init
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            assetsignal = signal;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        assetToLoad(<a class="code" href="classgFmodSound.html">gFmodSound</a>&amp; sound, std::string filename, <span class="keywordtype">short</span> signal) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        assetToLoad(<a class="code" href="classgSound.html">gSound</a>&amp; sound, std::string filename, <span class="keywordtype">short</span> signal) {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            this-&gt;sound = &amp;sound;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            this-&gt;filename = filename;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            this-&gt;name = filename;</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('gAssetLoader_8h_source.html',''); init
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="classgTexture.html">gTexture</a>* texture;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="classgModel.html">gModel</a>* model;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="classgFont.html">gFont</a>* font;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classgFmodSound.html">gFmodSound</a>* sound;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classgSound.html">gSound</a>* sound;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        std::string filename;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        std::string name;</div>
@@ -272,12 +272,13 @@ $(document).ready(function(){initNavTree('gAssetLoader_8h_source.html',''); init
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UTILS_GASSETLOADER_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclassgAssetLoader_html"><div class="ttname"><a href="classgAssetLoader.html">gAssetLoader</a></div><div class="ttdef"><b>Definition:</b> gAssetLoader.h:29</div></div>
-<div class="ttc" id="aclassgFmodSound_html"><div class="ttname"><a href="classgFmodSound.html">gFmodSound</a></div><div class="ttdef"><b>Definition:</b> gFmodSound.h:21</div></div>
 <div class="ttc" id="aclassgFont_html"><div class="ttname"><a href="classgFont.html">gFont</a></div><div class="ttdef"><b>Definition:</b> gFont.h:41</div></div>
 <div class="ttc" id="aclassgImage_html"><div class="ttname"><a href="classgImage.html">gImage</a></div><div class="ttdef"><b>Definition:</b> gImage.h:34</div></div>
 <div class="ttc" id="aclassgModel_html"><div class="ttname"><a href="classgModel.html">gModel</a></div><div class="ttdef"><b>Definition:</b> gModel.h:31</div></div>
+<div class="ttc" id="aclassgSound_html"><div class="ttname"><a href="classgSound.html">gSound</a></div><div class="ttdef"><b>Definition:</b> gSound.h:15</div></div>
 <div class="ttc" id="aclassgTexture_html"><div class="ttname"><a href="classgTexture.html">gTexture</a></div><div class="ttdef"><b>Definition:</b> gTexture.h:17</div></div>
 <div class="ttc" id="aclassgThread_html"><div class="ttname"><a href="classgThread.html">gThread</a></div><div class="ttdef"><b>Definition:</b> gThread.h:28</div></div>
+<div class="ttc" id="agSound_8h_html"><div class="ttname"><a href="gSound_8h.html">gSound.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

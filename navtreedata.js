@@ -46,16 +46,16 @@ var NAVTREEINDEX =
 "annotated.html",
 "classgBaseParticles.html#a032ca3f4e351e20ffb363d7020584014",
 "classgDatabase.html#a13c3213a26d55ee9fd8047c45a49ac4c",
-"classgGUICandleStickChart.html#a2b279f13aab91dea10f70e16b76b9fb4",
-"classgGUIForm.html#ad7de79f1f95b36356d2e6cd7ad692d5b",
-"classgGUIManager.html#a8a20fb1a7b6ca25363384e5abca48351",
-"classgGUIScrollable.html#a1871b76ea2ca231f53aac2074d45dab2",
-"classgGUIToolbarButton.html#a68f0ae8e92099be256249676d792a0ef",
-"classgMaterial.html#a489ee74c4ce5d561171e2002ae47bd03",
-"classgMouseButtonEvent.html#ae0118f12de81fa4f96ffe026aaccb25c",
-"classgRenderer.html#ab2efab9124d8796f6792e2e3349df29f",
-"classgTexture.html#ac19361c82e17295edd24f1ae4c953218",
-"gGUITable_8h_source.html"
+"classgGUICheckbox.html#a0456031be3534502d2a8e3b26d5647f2",
+"classgGUIFrame.html#ab6e1c7302ff2f32bad4a31dd28e09aee",
+"classgGUIMenuItem.html#a00d31f8f3af217446cf001697b58fcbf",
+"classgGUIScrollable.html#a8620d5536e48ddb7234aa278059fef0b",
+"classgGUITooltipText.html#aba143258b5a676d3123d8cc6e661e0d3",
+"classgMaterial.html#a7f959d961d9f1bff729264e5400425eb",
+"classgNode.html#a092f481dae264bb851f975307ff552c8",
+"classgRenderer.html#ace9d224185df61cdf2ee58925626babd",
+"classgTexture.html#afacad5facf5edb4adbd376973f3d41a3",
+"gMaterial_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

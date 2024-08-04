@@ -39,7 +39,6 @@ var annotated_dup =
     [ "gFile", "classgFile.html", "classgFile" ],
     [ "gFireParticles", "classgFireParticles.html", "classgFireParticles" ],
     [ "gFireworksParticles", "classgFireworksParticles.html", "classgFireworksParticles" ],
-    [ "gFmodSound", "classgFmodSound.html", "classgFmodSound" ],
     [ "gFog", "classgFog.html", "classgFog" ],
     [ "gFont", "classgFont.html", "classgFont" ],
     [ "gGLFWWindow", "classgGLFWWindow.html", "classgGLFWWindow" ],

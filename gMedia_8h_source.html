@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('gMedia_8h_source.html',''); initResiza
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  , MEDIATYPE_SOUND</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classgMedia.html">   35</a></span>&#160;<span class="keyword">class </span><span class="keyword">alignas</span>(64) <a class="code" href="classgMedia.html">gMedia</a> : <a class="code" href="classgObject.html">gObject</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classgMedia.html">   35</a></span>&#160;<span class="keyword">class </span><span class="keyword">alignas</span>(64) <a class="code" href="classgMedia.html">gMedia</a> : <span class="keyword">public</span> <a class="code" href="classgObject.html">gObject</a> {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">using</span> gPixelArray = std::unique_ptr&lt;uint8_t[]&gt;;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
@@ -185,24 +185,23 @@ $(document).ready(function(){initNavTree('gMedia_8h_source.html',''); initResiza
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    int32_t            height{};</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    int64_t            framecount{};</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    int64_t            framesprocessed{};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    int64_t            duration{};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    int32_t            numpixelcomponents;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    int64_t            avgfps{};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    gPixelArray        videoframepixeldata{};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">//  Audio</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    AVCodecParameters* audiocodecparameters{};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    AVCodecContext*    audiocodeccontext{};</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    AVCodec <span class="keyword">const</span>*     audiocodec{};</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    AVFrame*           audioframe{};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    int32_t            audiochannelsnum{};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    int32_t            audiosamplerate{};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    int32_t            audiovolume{};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    gMediaFrameType lastreceivedframetype;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MEDIA_G_MEDIA_H_</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    int32_t            numpixelcomponents;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    int64_t            avgfps{};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    gPixelArray        videoframepixeldata{};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">//  Audio</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    AVCodecParameters* audiocodecparameters{};</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    AVCodecContext*    audiocodeccontext{};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    AVCodec <span class="keyword">const</span>*     audiocodec{};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    AVFrame*           audioframe{};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    int32_t            audiochannelsnum{};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    int32_t            audiosamplerate{};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    int32_t            audiovolume{};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    gMediaFrameType lastreceivedframetype;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MEDIA_G_MEDIA_H_</span></div>
 <div class="ttc" id="aclassgMediaUtils_html"><div class="ttname"><a href="classgMediaUtils.html">gMediaUtils</a></div><div class="ttdef"><b>Definition:</b> gMediaUtils.h:10</div></div>
 <div class="ttc" id="aclassgMedia_html"><div class="ttname"><a href="classgMedia.html">gMedia</a></div><div class="ttdef"><b>Definition:</b> gMedia.h:35</div></div>
 <div class="ttc" id="aclassgObject_html"><div class="ttname"><a href="classgObject.html">gObject</a></div><div class="ttdef"><b>Definition:</b> gObject.h:33</div></div>
