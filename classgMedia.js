@@ -11,7 +11,6 @@ var classgMedia =
     [ "isLoaded", "classgMedia.html#aeefe283575274cb059872abbde102c0f", null ],
     [ "isPaused", "classgMedia.html#a2adee74fcd8b3c2563e05e8f176b361a", null ],
     [ "isPlaying", "classgMedia.html#ac02c3b88560867a4cae4a1e9b38defbb", null ],
-    [ "load", "classgMedia.html#aad3a7525e2a37440340d92305a20c984", null ],
     [ "play", "classgMedia.html#aeea06f27edb2c90eff61f8201fcea80f", null ],
     [ "setLoopType", "classgMedia.html#a6072f5a184a4e32bf1f7c2bce16375f8", null ],
     [ "setPaused", "classgMedia.html#a3a47f2ddb07c84437ffedbde41df807e", null ],

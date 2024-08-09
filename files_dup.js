@@ -128,7 +128,8 @@ var files_dup =
     [ "gSkybox.h", "gSkybox_8h_source.html", null ],
     [ "gSoftFocus.h", "gSoftFocus_8h_source.html", null ],
     [ "gSound.h", "gSound_8h.html", [
-      [ "gSound", "classgSound.html", "classgSound" ]
+      [ "gSound", "classgSound.html", "classgSound" ],
+      [ "paTestData", "structgSound_1_1paTestData.html", "structgSound_1_1paTestData" ]
     ] ],
     [ "gSphere.h", "gSphere_8h_source.html", null ],
     [ "gSpriteAnimation.h", "gSpriteAnimation_8h_source.html", null ],

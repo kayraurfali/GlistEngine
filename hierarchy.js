@@ -196,5 +196,6 @@ var hierarchy =
     [ "gUTF8Iterator", "classgUTF8Iterator.html", null ],
     [ "gUtils", "classgUtils.html", null ],
     [ "gVertex", "structgVertex.html", null ],
+    [ "gSound::paTestData", "structgSound_1_1paTestData.html", null ],
     [ "gHttpFile::ProgressData", "structgHttpFile_1_1ProgressData.html", null ]
 ];
